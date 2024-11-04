@@ -15,6 +15,10 @@
     list-style: none;
     text-decoration: none;
 }
+.address__link {
+    text-underline-position: under;
+    text-decoration: underline;
+}
 .header__link {
     text-underline-position: under;
     text-decoration: underline;
@@ -27,12 +31,14 @@
     height: 106px;
     margin-bottom:3px;
 }
-.header__address {
+.address {
     padding: 5px 40px 0 0;
     justify-self: end;
     font-style: normal;
     line-height: 135%;
-    
+    font-size: 18px;
+    font-weight: 400;
+    text-underline-position: under;
 }
   /*конец header*/
 .cover {
@@ -66,16 +72,14 @@
 }
 .aligned-text {
     display: block;
-    line-height: 115px;
+    line-height: 100px;
 }
 .aligned-text_center {
     text-align: center;
-    line-height: 100px;
     padding: 20px 60px 20px 0;
 }
 .aligned-text_right {
     text-align: end;
-    line-height: 100px;
 }
 .letter-spacing-extended {
     letter-spacing: 0.6em;
@@ -242,12 +246,10 @@
     display: grid;
     grid-template-columns: 1fr auto 1fr;
  }
-  .address {
-    font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 135%;
-  text-underline-position: under;
+  .footer__left-column {
+  padding :0%;
+  display:flex;
+  justify-self:start;
   }
   .footer__menu {
     display: flex;
@@ -263,7 +265,7 @@
     list-style: none;
     font-size: 18px;
   }
-  .footer__menu-list {
+  .footer__menu-list-item {
     text-underline-position: under;
     text-decoration: underline;
   }
